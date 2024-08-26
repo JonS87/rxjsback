@@ -1,8 +1,8 @@
 {
   "name": "emailback",
   "version": "1.0.0",
-  "description": "![CI](https://github.com/JonS87/WsBack/actions/workflows/web.yml/badge.svg)",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "prestart": "npm install",
     "start": "forever server.js",
@@ -25,5 +25,8 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^8.4.1"
+  },
+  "engines": {
+    "node": "20.x"
   }
 }
