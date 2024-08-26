@@ -1,0 +1,29 @@
+{
+  "name": "emailback",
+  "version": "1.0.0",
+  "description": "![CI](https://github.com/JonS87/WsBack/actions/workflows/web.yml/badge.svg)",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js"
+  },
+  "author": "coursar",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "express": "^4.19.2",
+    "forever": "^1.0.1",
+    "http-event-stream": "^0.2.0",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.4.1",
+    "koa-combine-routers": "^4.0.2",
+    "koa-router": "^12.0.1",
+    "koa-static": "^5.0.0",
+    "uuid": "^7.0.2",
+    "ws": "^7.2.3"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1"
+  }
+}
