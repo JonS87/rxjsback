@@ -7,7 +7,10 @@ const app = new Koa();
 const router = new Router();
 const port = 7070;
 
-app.use(cors());
+app.use(cors({
+    origin: '*',
+    allowMethods: ['GET', 'POST'],
+}));
 
 const generateMessages = (count) => {
     const messages = [];
